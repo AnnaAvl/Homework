@@ -18,7 +18,7 @@ Source URL: http://www.ap.org/
 $ rss_reader.py "https://news.yahoo.com/rss/" --limit 1 --json
 ```
 #### news.json
-```json
+```
 [
   {
     "Feed": "Yahoo News - Latest News & Headlines",
@@ -31,7 +31,7 @@ $ rss_reader.py "https://news.yahoo.com/rss/" --limit 1 --json
 ]
 ```
 ## Usage
-```bash
+```
 usage: rss_reader.py [-h] [--version] [--json] [--verbose] [--limit LIMIT] [url]
 
 positional arguments:
@@ -43,4 +43,19 @@ optional arguments:
   --json         Prints result as JSON in stdout
   --verbose      Outputs verbose status messages
   --limit LIMIT  Limit news topics if this parameter provided
+```
+## Distribution
+```
+> pip install --editable .
+```
+### Note
+Run this command from program folder
+### Execution
+#### With CLI
+```
+> rss_reader [url] [-h] [--version] [--json] [--verbose] [--limit LIMIT]
+```
+#### Whithout CLI
+```
+> python rss_reader.py [url] [-h] [--version] [--json] [--verbose] [--limit LIMIT]
 ```

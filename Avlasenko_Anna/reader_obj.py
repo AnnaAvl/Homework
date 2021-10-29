@@ -15,7 +15,7 @@ class Parser1:
         # initialize the object, add the necessary parameters
         parser = argparse.ArgumentParser()
         parser.add_argument("url", type=str, nargs="?", help="URL")
-        parser.add_argument("--version", action="version", version="Version 1.1", help="Prints version info")
+        parser.add_argument("--version", action="version", version="Version 1.2", help="Prints version info")
         parser.add_argument("--json", action="store_true", help="Prints result as JSON in stdout")
         parser.add_argument("--verbose", action="store_true", help="Outputs verbose status messages")
         parser.add_argument("--limit", dest="limit", default=sys.maxsize, type=int,
