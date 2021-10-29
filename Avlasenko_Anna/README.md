@@ -1,4 +1,4 @@
-#RSS-reader
+# RSS-reader
 ##Description
 RSS reader is a command-line utility which receives RSS URL and prints results in human-readable format.
 ##Formats
@@ -18,7 +18,7 @@ Source URL: http://www.ap.org/
 $ rss_reader.py "https://news.yahoo.com/rss/" --limit 1 --json
 ```
 ####news.json
-```
+```json
 [
   {
     "Feed": "Yahoo News - Latest News & Headlines",
@@ -31,7 +31,7 @@ $ rss_reader.py "https://news.yahoo.com/rss/" --limit 1 --json
 ]
 ```
 ##Usage
-```
+```bash
 usage: rss_reader.py [-h] [--version] [--json] [--verbose] [--limit LIMIT] [url]
 
 positional arguments:
